@@ -4,7 +4,7 @@ import styles from './Header.css';
 export default class Header extends Component {
   render() {
     return (
-      <header>
+      <header className={styles}>
         <h1>RESTy</h1>
       </header>
     );

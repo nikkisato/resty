@@ -1,5 +1,6 @@
 import React from 'react';
-import Resty from '../Header/Header';
+import Resty from './Resty';
+import 'normalize.css';
 
 export default function App() {
   return <Resty />;
