@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import Header from './Header/Header';
-import History from './History/History';
+import History from '../components/History/History';
+import Form from '../components/Form/Form';
 
 export default class Resty extends Component {
   render() {
     return (
       <>
-        <Header />
+
         <History />
+        <Form />
       </>
     );
   }
