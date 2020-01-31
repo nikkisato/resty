@@ -36,7 +36,7 @@ const Form = ({ onSubmit, handleChange, URL }) => (
           <button>GO!</button>
         </div>
         <br></br>
-        <textarea placeholder="RAW JSON BODY"></textarea>
+        <textarea onChange={handleChange} name="reqBody"  placeholder="RAW JSON BODY"></textarea>
       </div>
     </form>
   </>

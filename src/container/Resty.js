@@ -7,7 +7,7 @@ export default class Resty extends Component {
 
   state =  {
     URL: '',
-    methods: '',
+    method: '',
     reqBody: ''  
   }
   handleSubmit = event => {
@@ -24,7 +24,11 @@ export default class Resty extends Component {
     return (
       <>
         <History />
-        <Form URL={this.state.URL} handleChange={this.handleChange} 
+        <Form 
+          URL={this.state.URL} 
+          method={this.state.method} 
+          reqBody={this.state.reqBody}
+          handleChange={this.handleChange} 
           onSubmit={this.handleSubmit} />
       </>
     );
