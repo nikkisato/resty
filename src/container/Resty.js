@@ -29,7 +29,7 @@ export default class Resty extends Component {
           method={this.state.method} 
           reqBody={this.state.reqBody}
           handleChange={this.handleChange} 
-          onSubmit={this.handleSubmit} />
+          handleSubmit={this.handleSubmit} />
       </>
     );
   }

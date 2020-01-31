@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Form.css';
 
-const Form = ({ onSubmit, handleChange, URL }) => (
+const Form = ({ handleSubmit, handleChange, URL }) => (
   <>
-    <form className={styles.form} onSubmit={onSubmit}>
+    <form className={styles.form} handleSubmit={handleSubmit}>
       <div className={styles.container}>
         <input type="text" onChange={handleChange}  name="URL" placeholder="URL" value={URL} />
         <div id="methods" className={styles.buttons}>
@@ -43,9 +43,11 @@ const Form = ({ onSubmit, handleChange, URL }) => (
 );
 
 Form.propTypes = {
-  onSubmit: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
   handleChange: PropTypes.func.isRequired,
-  URL: PropTypes.string.isRequired
+  URL: PropTypes.string.isRequired,
+  method: PropTypes.string.isRequired,
+  reqBody: PropTypes.string.isRequired,
 };
 
 export default Form;
