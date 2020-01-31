@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import styles from './Footer.css';
 
 export default class Footer extends Component {
   render() {
     return (
-      <Footer>
-        <h1>RESTy</h1>
+      <Footer className={styles}>
+        <h1> BY Nikki Sato</h1>
       </Footer>
     );
   }

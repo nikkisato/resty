@@ -1,19 +1,51 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Form.css';
 
-export default class Input extends Component {
-  render() {
-    return (
+const Form = ({ onSubmit, handleChange, URL }) => (
+  <>
+    <form className={styles.form} onSubmit={onSubmit}>
       <div className={styles.container}>
-        <input placeholder="URL"></input>
-        <button>GET</button>
-        <button>POST</button>
-        <button>PUT</button>
-        <button>PATCH</button>
-        <button>DELETE</button>
-        <button>GO!</button>
+        <input type="text" onChange={handleChange}  name="URL" placeholder="URL" value={URL} />
+        <div id="methods" className={styles.buttons}>
+          <label>
+            {' '}
+            <input type="radio" onChange={handleChange} name="method" value="get" />
+            <span>GET</span>
+          </label>
+          <label>
+            {' '}
+            <input type="radio"  onChange={handleChange} name="method" value="post" />
+            <span>POST</span>
+          </label>
+          <label>
+            {' '}
+            <input type="radio"  onChange={handleChange} name="method" value="put" />
+            <span>PUT</span>
+          </label>
+          <label>
+            {' '}
+            <input type="radio" onChange={handleChange} name="method" value="patch" />
+            <span>PATCH</span>
+          </label>
+          <label> {' '}
+            <input type="radio" onChange={handleChange} name="method" value="delete"/>
+            <span>DELETE</span>
+          </label>
 
+          <button>GO!</button>
+        </div>
+        <br></br>
+        <textarea placeholder="RAW JSON BODY"></textarea>
       </div>
-    );
-  }
-}
+    </form>
+  </>
+);
+
+Form.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+  handleChange: PropTypes.func.isRequired,
+  URL: PropTypes.string.isRequired
+};
+
+export default Form;

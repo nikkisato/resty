@@ -1,4 +1,54 @@
-input {
-    width: 60%;
-    background-color: black;
+.container {
+  width: auto;
+  height: auto;
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+span {
+  border: 1px solid black;
+  margin: 5px 0.5rem;
+  padding: 10px;
+}
+
+input[type="radio"] {
+  background-color: initial;
+  cursor: default;
+  -webkit-appearance: radio;
+  box-sizing: border-box;
+  margin: 5px 0.5rem;
+  padding: 10px;
+  border: initial;
+}
+
+
+input[type="radio"]:active {
+  span {
+    background-color: blue;
+  }
+}
+
+input[type="radio"]:active {
+  background-color: blue;
+}
+
+input[type="radio"] span {
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+input[type="text"] {
+  width: 90%;
+  border: 1px black solid;
+  margin: 5px;
+}
+textarea {
+  width: 50%;
+}
+
+.buttons {
+  margin-top: 30px;
 }
