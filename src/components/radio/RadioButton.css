@@ -7,11 +7,9 @@
     }
 }
 
-input{ 
-    display: none;
-}
 
-input:checked + input {
+
+input:checked + label {
     background-color: red;
     color: white;
 
