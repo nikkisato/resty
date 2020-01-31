@@ -6,7 +6,6 @@ const RadioButton = ({ name, label, value, onChange }) => (
   <div className={styles.RadioButton}>
     <input id={styles.RadioButton} type name={name} value={value} onChange={onChange}/>
     <label htmlFor={value}>{label}</label>
-
   </div>
 );
 
