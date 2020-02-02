@@ -6,12 +6,21 @@ export default class Resty extends Component {
   state = {
     URL: '',
     method: '',
-    reqBody: ''
+    reqBody: '',
+    results: []
   };
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault();
-    
-    //fetch with current url in state and method 
+    fetch(this.state.url, {
+      method: this.state.method, 
+      body: ['POST', 'PUT', 'PATCH'].includes(this.state.method) ? this.state.reqBody : null
+    })
+      .then(res => res.json())
+      .then(results => this.setState(() => ({
+        results
+      })));
+
+    //fetch with current url in state and method
     // this.state.method
     //.then off fetch res.json update reqbody with results
   };
