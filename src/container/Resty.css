@@ -1,0 +1,47 @@
+   /* Tablet */
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "sidebar"
+    "content"
+    "form"
+}
+
+@media(min-width: 600px) {
+    .wrapper {
+        display:grid;
+        grid-template:
+        [row1-start] "header header "  [row1-end]
+        [row2-start] "sidebar form " [row2-end]
+        [row2-start] "sidebar results " [row2-end]
+        /1fr 1fr ;
+    }
+
+}
+
+/* Desktop */
+@media(min-width: 900px) {
+    .wrapper {
+        display:grid;
+        grid-template:
+        [row1-start] "header header "  [row1-end]
+        [row2-start] "sidebar form " [row2-end]
+        [row2-start] "sidebar results " [row2-end]
+        /1fr 1fr ;
+    }
+}
+
+.header {
+    grid-area: header;
+}
+
+.nags-ul {
+    grid-area: content;
+}
+
+.history {
+    grid-area: sidebar;
+}

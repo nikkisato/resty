@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import History from '../components/History/History';
 import Form from '../components/Form/Form';
 import Results from '../components/Results/Results';
+import styles from './Resty.css';
 
 export default class Resty extends Component {
   state = {
@@ -47,15 +48,17 @@ export default class Resty extends Component {
   render() {
     return (
       <>
-        <History history={this.state.history} />
-        <Form
-          URL={this.state.URL}
-          method={this.state.method}         
-          reqBody={this.state.reqBody}
-          onChange={this.handleChange}
-          onSubmit={this.handleSubmit}
-        />
-        <Results response={this.state.results} />
+        <div className={styles.wrapper}> 
+          <History history={this.state.history} />
+          <Form
+            URL={this.state.URL}
+            method={this.state.method}         
+            reqBody={this.state.reqBody}
+            onChange={this.handleChange}
+            onSubmit={this.handleSubmit}
+          />
+          <Results response={this.state.results} />
+        </div>
       </>
     );
   }

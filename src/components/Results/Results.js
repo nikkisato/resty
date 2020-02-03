@@ -8,7 +8,6 @@ export default function Results({ response }) {
   return (
     <>
       <h2>Results</h2>
-
       <ReactJson src={response} theme="solarized"/>
     </>
   );
