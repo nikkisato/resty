@@ -2,10 +2,13 @@
 
 exports[`History component renders History 1`] = `
 <div
-  className="container"
+  className="history"
 >
-  <h3>
-    History
-  </h3>
+  <h2>
+    History Section
+  </h2>
+  <ul
+    className="historyList"
+  />
 </div>
 `;

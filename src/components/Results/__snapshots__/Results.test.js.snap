@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Result component match a snapshot 1`] = `
+<Fragment>
+  <h2>
+    Results
+  </h2>
+  <div
+    className="results"
+  >
+    <t
+      collapseStringsAfterLength={false}
+      collapsed={false}
+      defaultValue={null}
+      displayDataTypes={true}
+      displayObjectSize={true}
+      enableClipboard={true}
+      groupArraysAfterLength={100}
+      iconStyle="triangle"
+      indentWidth={4}
+      name="root"
+      onAdd={false}
+      onDelete={false}
+      onEdit={false}
+      onSelect={false}
+      shouldCollapse={false}
+      sortKeys={false}
+      src="response"
+      style={Object {}}
+      theme="rjv-default"
+      validationMessage="Validation Error"
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`Result component match a snapshot with type prop passed 1`] = `
+<Fragment>
+  <h2>
+    Results
+  </h2>
+  <div
+    className="results"
+  >
+    <t
+      collapseStringsAfterLength={false}
+      collapsed={false}
+      defaultValue={null}
+      displayDataTypes={true}
+      displayObjectSize={true}
+      enableClipboard={true}
+      groupArraysAfterLength={100}
+      iconStyle="triangle"
+      indentWidth={4}
+      name="root"
+      onAdd={false}
+      onDelete={false}
+      onEdit={false}
+      onSelect={false}
+      shouldCollapse={false}
+      sortKeys={false}
+      src="response"
+      style={Object {}}
+      theme="rjv-default"
+      validationMessage="Validation Error"
+    />
+  </div>
+</Fragment>
+`;

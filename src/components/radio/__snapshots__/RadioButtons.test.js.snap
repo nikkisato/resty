@@ -3,14 +3,19 @@
 exports[`RadioButtons component renders RadioButtons 1`] = `
 <Fragment>
   <RadioButton
-    key="PUT"
-    label="Put"
-    value="PUT"
-  />
-  <RadioButton
     key="GET"
     label="Get"
     value="GET"
+  />
+  <RadioButton
+    key="POST"
+    label="Post"
+    value="POST"
+  />
+  <RadioButton
+    key="PUT"
+    label="Put"
+    value="PUT"
   />
   <RadioButton
     key="PATCH"
@@ -21,11 +26,6 @@ exports[`RadioButtons component renders RadioButtons 1`] = `
     key="DELETE"
     label="Delete"
     value="DELETE"
-  />
-  <RadioButton
-    key="POST"
-    label="Post"
-    value="POST"
   />
 </Fragment>
 `;

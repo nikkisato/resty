@@ -4,7 +4,7 @@ import History from './History';
 
 describe('History component', () => {
   it('renders History', () => {
-    const wrapper = shallow(<History />);
+    const wrapper = shallow(<History history = {['Test']}/>);
     expect(wrapper).toMatchSnapshot();
   });
 });
