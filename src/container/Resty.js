@@ -7,7 +7,8 @@ export default class Resty extends Component {
     URL: '',
     method: '',
     reqBody: '',
-    results: []
+    results: [], 
+    history: []
   };
   handleSubmit = (event) => {
     event.preventDefault();
@@ -19,10 +20,6 @@ export default class Resty extends Component {
       .then(results => this.setState(() => ({
         results
       })));
-
-    //fetch with current url in state and method
-    // this.state.method
-    //.then off fetch res.json update reqbody with results
   };
 
   handleChange = ({ target }) => {

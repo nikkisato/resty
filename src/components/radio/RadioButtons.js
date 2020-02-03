@@ -4,11 +4,11 @@ import RadioButton from './RadioButton';
 
 const RadioButtons = ({  method, onChange }) => {
   const radioButtons = [
-    { label: 'Put', value: 'PUT' },
     { label: 'Get', value: 'GET' },
+    { label: 'Post', value: 'POST' },
+    { label: 'Put', value: 'PUT' },
     { label: 'Patch', value: 'PATCH' },
-    { label: 'Delete', value: 'DELETE' },
-    { label: 'Post', value: 'POST' }
+    { label: 'Delete', value: 'DELETE' }
   ];
   const radioButtonElements = radioButtons.map(({ label, value }) => (
     <RadioButton
