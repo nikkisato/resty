@@ -5,32 +5,28 @@ exports[`Result component match a snapshot 1`] = `
   <h2>
     Results
   </h2>
-  <div
-    className="results"
-  >
-    <t
-      collapseStringsAfterLength={false}
-      collapsed={false}
-      defaultValue={null}
-      displayDataTypes={true}
-      displayObjectSize={true}
-      enableClipboard={true}
-      groupArraysAfterLength={100}
-      iconStyle="triangle"
-      indentWidth={4}
-      name="root"
-      onAdd={false}
-      onDelete={false}
-      onEdit={false}
-      onSelect={false}
-      shouldCollapse={false}
-      sortKeys={false}
-      src="response"
-      style={Object {}}
-      theme="rjv-default"
-      validationMessage="Validation Error"
-    />
-  </div>
+  <t
+    collapseStringsAfterLength={false}
+    collapsed={false}
+    defaultValue={null}
+    displayDataTypes={true}
+    displayObjectSize={true}
+    enableClipboard={true}
+    groupArraysAfterLength={100}
+    iconStyle="triangle"
+    indentWidth={4}
+    name="root"
+    onAdd={false}
+    onDelete={false}
+    onEdit={false}
+    onSelect={false}
+    shouldCollapse={false}
+    sortKeys={false}
+    src={Object {}}
+    style={Object {}}
+    theme="solarized"
+    validationMessage="Validation Error"
+  />
 </Fragment>
 `;
 
@@ -39,31 +35,27 @@ exports[`Result component match a snapshot with type prop passed 1`] = `
   <h2>
     Results
   </h2>
-  <div
-    className="results"
-  >
-    <t
-      collapseStringsAfterLength={false}
-      collapsed={false}
-      defaultValue={null}
-      displayDataTypes={true}
-      displayObjectSize={true}
-      enableClipboard={true}
-      groupArraysAfterLength={100}
-      iconStyle="triangle"
-      indentWidth={4}
-      name="root"
-      onAdd={false}
-      onDelete={false}
-      onEdit={false}
-      onSelect={false}
-      shouldCollapse={false}
-      sortKeys={false}
-      src="response"
-      style={Object {}}
-      theme="rjv-default"
-      validationMessage="Validation Error"
-    />
-  </div>
+  <t
+    collapseStringsAfterLength={false}
+    collapsed={false}
+    defaultValue={null}
+    displayDataTypes={true}
+    displayObjectSize={true}
+    enableClipboard={true}
+    groupArraysAfterLength={100}
+    iconStyle="triangle"
+    indentWidth={4}
+    name="root"
+    onAdd={false}
+    onDelete={false}
+    onEdit={false}
+    onSelect={false}
+    shouldCollapse={false}
+    sortKeys={false}
+    src={Object {}}
+    style={Object {}}
+    theme="solarized"
+    validationMessage="Validation Error"
+  />
 </Fragment>
 `;

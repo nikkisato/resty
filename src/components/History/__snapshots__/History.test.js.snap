@@ -9,6 +9,10 @@ exports[`History component renders History 1`] = `
   </h2>
   <ul
     className="historyList"
-  />
+  >
+    <li
+      key="0"
+    />
+  </ul>
 </div>
 `;
