@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import History from '../components/History/History';
 import Form from '../components/Form/Form';
+import Results from '../components/Results/Results';
 
 export default class Resty extends Component {
   state = {
@@ -12,9 +13,25 @@ export default class Resty extends Component {
   };
   handleSubmit = (event) => {
     event.preventDefault();
-    fetch(this.state.url, {
+
+    this.setState(prevState => ({
+      history: [
+        ...prevState.history, 
+        {
+          method: this.state.method,
+          URL: this.state.URL
+        }
+      ]
+
+    }));
+
+    return fetch(this.state.URL, {
       method: this.state.method, 
-      body: ['POST', 'PUT', 'PATCH'].includes(this.state.method) ? this.state.reqBody : null
+      body: ['POST', 'PUT', 'PATCH'].includes(this.state.method) ? this.state.reqBody : null, 
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
     })
       .then(res => res.json())
       .then(results => this.setState(() => ({
@@ -30,14 +47,15 @@ export default class Resty extends Component {
   render() {
     return (
       <>
-        <History />
+        <History history={this.state.history} />
         <Form
           URL={this.state.URL}
-          method={this.state.method}
+          method={this.state.method}         
           reqBody={this.state.reqBody}
           onChange={this.handleChange}
           onSubmit={this.handleSubmit}
         />
+        <Results response={this.state.results} />
       </>
     );
   }

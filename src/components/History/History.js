@@ -3,9 +3,10 @@ import propTypes from 'prop-types';
 import styles from './History.css';
 
 export default function History({ history }) {
-  const historyListItems = history.map(link => {
-    <li key={link}>
-      {link}
+  const historyListItems = history.map((item, i) => {
+    return <li key={i}>
+      {item.URL}
+      {item.method}
     </li>;
   });
 
@@ -15,12 +16,10 @@ export default function History({ history }) {
       <ul className={styles.historyList}>
         {historyListItems}
       </ul>
-
-
     </div>
   );
 }
 
-History.propType = {
-  history: propTypes.array.isRequired
+History.propTypes = {
+  history: propTypes.array
 };
