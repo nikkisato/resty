@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButton component renders RadioButton 1`] = `
+<div
+  className="RadioButton"
+>
+  <input
+    id="RadioButton"
+    name="method"
+    type="radio"
+  />
+  <label />
+</div>
+`;

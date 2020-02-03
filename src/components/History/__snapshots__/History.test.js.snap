@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`History component renders History 1`] = `
+<div
+  className="history"
+>
+  <h2>
+    History Section
+  </h2>
+  <ul
+    className="historyList"
+  >
+    <li
+      key="0"
+    />
+  </ul>
+</div>
+`;
